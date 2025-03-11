@@ -44,6 +44,15 @@ PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+# wireguard
+PACKAGES="$PACKAGES luci-proto-wireguard"
+PACKAGES="$PACKAGES wireguard-tools"
+PACKAGES="$PACKAGES ucode"
+PACKAGES="$PACKAGES luci-lib-uqr"
+PACKAGES="$PACKAGES resolveip"
+# netdata
+PACKAGES="$PACKAGES luci-app-netdata"
+PACKAGES="$PACKAGES luci-i18n-netdata-zh-cn"
 
 # 构建镜像
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Building image with the following packages:"
