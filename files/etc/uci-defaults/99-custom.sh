@@ -79,8 +79,8 @@ elif [ "$count" -gt 1 ]; then
       echo "PPPoE is enabled at $(date)" >> $LOGFILE
       # 设置ipv4宽带拨号信息
       uci set network.wan.proto='pppoe'
-      uci set network.wan.username='059197503462'
-      uci set network.wan.password='386932'
+      uci set network.wan.username=$pppoe_account 
+      uci set network.wan.password=$pppoe_password
       uci set network.wan.peerdns='1'
       uci set network.wan.auto='1'
       # 设置ipv6 默认不配置协议
